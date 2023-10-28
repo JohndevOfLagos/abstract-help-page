@@ -1,0 +1,43 @@
+
+
+
+
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  scroll-behavior: smooth;
+  background-color: darken(#fff, 20%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+}
+
+body ::before {
+  display: block;
+}

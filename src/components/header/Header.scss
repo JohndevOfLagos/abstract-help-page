@@ -1,0 +1,96 @@
+@use "../../Sass/colours" as color;
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: color.$primary-black;
+
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 5rem;
+    @media screen and (max-width:640px), (max-width:640px) {
+      padding: 0.7rem 1rem;
+    }
+  }
+}
+
+.left-nav,
+.right-nav,
+span,
+a {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  font-size: 1.2rem;
+  @media screen and (max-width:640px), (max-width:640px) {
+   font-size: .7rem;
+ }
+  font-weight: 400;
+  color: color.$white;
+  letter-spacing: -0.0rem;
+}
+
+.left-nav a {
+  & > svg {
+    font-size: 25px;
+    @media screen and (max-width:640px), (max-width:640px) {
+      font-size: 20px;
+    }
+    color: color.$white;
+    background-color: color.$primary-black;
+  }
+}
+
+.brand-logo {
+  gap: 0.4rem;
+}
+
+.right-nav {
+  gap: 0.8rem;
+
+  & > button {
+    padding: .5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    @media screen and (max-width:640px), (max-width:640px) {
+      font-size: .7rem;
+      padding: .5rem .5rem;
+    }
+  }
+}
+
+.right-nav button:first-child {
+  color: color.$white;
+  background-color: color.$primary-black;
+  border: 1px solid darken(color.$white, 50%);
+  cursor: pointer;
+}
+
+.right-nav button:first-child:hover {
+  color: color.$primary-black;
+  background-color: color.$white;
+  border: 1px solid transparent;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.right-nav button:last-child {
+  color: color.$white;
+  background-color: color.$primary-blue;
+  border: none;
+  cursor: pointer;
+}
+
+.right-nav button:last-child:hover {
+  color: color.$primary-blue;
+  background-color: color.$white;
+  transition: 200ms ease;
+  cursor: pointer;
+}
