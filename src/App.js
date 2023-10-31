@@ -1,13 +1,12 @@
 
-import { AbstractHelpPage } from "./home/AbstractHelpPage";
+import React from 'react'
 
+import { Approutes } from './routes/Approutes'
 
-function App() {
+const App = () => {
   return (
-   <>
-   <AbstractHelpPage/>
-   </>
-  );
+    <Approutes/>
+  )
 }
 
-export default App;
+export default App

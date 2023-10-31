@@ -1,0 +1,76 @@
+@use "../Sass//colours" as color;
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: color.$purple-light;
+}
+
+.hero_innner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+
+  & > h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    @media screen and (max-width: 992px), (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.input-group {
+  display: flex;
+  position: relative;
+  width: 120%;
+  @media screen and (max-width: 992px), (max-width: 992px) {
+    width: 280%;
+  }
+  @media screen and (max-width: 640px), (max-width: 640px) {
+    width: 120%;
+  }
+  background-color: color.$white;
+  box-shadow: 0px 8px 15px 0px darken(color.$purple-light, $amount: 10%);
+  border-radius: 0.5rem;
+
+  & > input {
+    border: none;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 100%;
+    padding: 1rem 1rem;
+    // padding-right: 3.5rem;
+    border-radius: 0.5rem;
+  }
+
+  & > input::placeholder {
+    font-size: 1rem;
+    @media screen and (max-width: 992px), (max-width: 992px) {
+      font-weight: 300;
+    }
+    color: lighten(color.$primary-black, $amount: 65%);
+  }
+  & > input:focus {
+    outline: none;
+  }
+
+  & > button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: calc(50% - 0.8rem);
+    right: 0.8rem;
+    cursor: pointer;
+
+    svg {
+      font-size: 24px;
+      color: color.$primary-black;
+    }
+  }
+}

@@ -15,7 +15,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.7rem 5rem;
-    @media screen and (max-width:640px), (max-width:640px) {
+    @media screen and (max-width: 640px), (max-width: 640px) {
       padding: 0.7rem 1rem;
     }
   }
@@ -29,23 +29,26 @@ a {
   align-items: center;
   align-items: center;
   font-size: 1.2rem;
-  @media screen and (max-width:640px), (max-width:640px) {
-   font-size: .7rem;
- }
+  @media screen and (max-width: 640px), (max-width: 640px) {
+    font-size: 0.7rem;
+  }
   font-weight: 400;
   color: color.$white;
-  letter-spacing: -0.0rem;
 }
 
 .left-nav a {
   & > svg {
     font-size: 25px;
-    @media screen and (max-width:640px), (max-width:640px) {
+    @media screen and (max-width: 640px), (max-width: 640px) {
       font-size: 20px;
     }
     color: color.$white;
     background-color: color.$primary-black;
   }
+}
+
+.left-nav a:hover {
+  color: darken(color.$white, 40%);
 }
 
 .brand-logo {
@@ -56,12 +59,12 @@ a {
   gap: 0.8rem;
 
   & > button {
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.2rem;
-    @media screen and (max-width:640px), (max-width:640px) {
-      font-size: .7rem;
-      padding: .5rem .5rem;
+    @media screen and (max-width: 640px), (max-width: 640px) {
+      font-size: 0.7rem;
+      padding: 0.5rem 0.5rem;
     }
   }
 }
