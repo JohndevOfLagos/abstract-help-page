@@ -1,6 +1,6 @@
 @use "../Sass//colours" as color;
 
-.Hero {
+.Hero-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +8,13 @@
   height: 350px;
   background-color: color.$purple-light;
 }
+
+.Hero {
+  max-width: 1436px;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+
 
 .hero_innner {
   display: flex;
@@ -23,6 +30,7 @@
       font-size: 1.5rem;
     }
   }
+
 }
 
 .input-group {

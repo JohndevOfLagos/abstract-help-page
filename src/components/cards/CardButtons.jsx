@@ -7,8 +7,9 @@ import { Link } from "react-router-dom";
 export const CardButtons = () => {
   return (
     <div className="card-wrapper">
+      <div className="card__inner">
       <Link className="card">
-      <Icon icon="bx:git-branch" />
+      <Icon icon="bx:git-branch" className="branches-logo"/>
         <div className="card-detials">
           <h1>Branches</h1>
           <p>
@@ -22,7 +23,7 @@ export const CardButtons = () => {
         </div>
       </Link>
       <Link className="card">
-      <Icon icon="vaadin:users" />
+      <Icon icon="vaadin:users" className="Users-logo"/>
         <div className="card-detials">
           <h1>Manage your account</h1>
           <p>
@@ -36,7 +37,7 @@ export const CardButtons = () => {
         </div>
       </Link>
       <Link className="card">
-      <Icon icon="vaadin:puzzle-piece" hFlip={true} />
+      <Icon icon="vaadin:puzzle-piece" hFlip={true} className="teams-logo" />
         <div className="card-detials">
           <h1>Manage organizations, teams and projects</h1>
           <p>
@@ -49,7 +50,7 @@ export const CardButtons = () => {
         </div>
       </Link>
       <Link className="card">
-      <Icon icon="gg:dollar" />
+      <Icon icon="gg:dollar" className="dollar-logo"/>
         <div className="card-detials">
           <h1>Manage billing</h1>
           <p>
@@ -62,7 +63,7 @@ export const CardButtons = () => {
         </div>
       </Link>
       <Link className="card">
-      <Icon icon="mdi:key-variant" />
+      <Icon icon="mdi:key-variant" className="key-logo"/>
         <div className="card-detials">
           <h1>Authenticate to Abstract</h1>
           <p>
@@ -75,7 +76,7 @@ export const CardButtons = () => {
         </div>
       </Link>
       <Link className="card">
-      <Icon icon="ph:chat-dots-fill" />
+      <Icon icon="ph:chat-dots-fill" className="chat-logo"/>
         <div className="card-detials">
           <h1>Abstract support</h1>
           <p>
@@ -87,6 +88,7 @@ export const CardButtons = () => {
           </Link>
         </div>
       </Link>
+      </div>
     </div>
   );
 };
