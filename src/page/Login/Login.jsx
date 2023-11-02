@@ -33,7 +33,7 @@ export const Login = () => {
             typeof='password'
             placeholder='Enter your password'
             pattern="[a-z0-9]{8,}"
-            maxLength={8}
+            maxLength={8} auth
             />
          <span className="input-error">
                Digits or letters, min 8 character
